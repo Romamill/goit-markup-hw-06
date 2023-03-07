@@ -511,7 +511,7 @@ footer {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  margin-top: 48px;
+  margin-top: 40px;
   margin-bottom: 16px;
 }
 
@@ -549,6 +549,9 @@ footer {
   position: absolute;
   top: 11px;
   left: 16px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-model:focus + .person-icon {
   fill: var(--color-iris);
@@ -560,6 +563,9 @@ footer {
   position: absolute;
   top: 8px;
   left: 16px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-model:focus + .phone-icon {
   fill: var(--color-iris);
@@ -571,6 +577,9 @@ footer {
   position: absolute;
   top: 8px;
   left: 16px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-model:focus + .email-icon {
   fill: var(--color-iris);
@@ -599,14 +608,13 @@ footer {
   border: 1px solid var(--color-brand);
   border-radius: 2px;
 }
-.checkbox-icon:focus + .click-icon {
-}
+
 .checkbox-input {
   appearance: none;
 }
 
 .checkbox-input:checked + .checkbox-icon {
-  background-image: url(../images/click.svg);
+  background-image: url(../images/xxx.svg);
 }
 /* url(../images/icons.svg#icon-click); */
 
