@@ -433,7 +433,12 @@
           <h3 class="title-h3 foot">Subscribe</h3>
           <form class="subscribe-form" name="subscribe-form">
             <label class="label-form">
-              <input class="input-footer" type="email" name="email-footer" placeholder="E-mail" />
+              <input
+                class="input-footer"
+                type="email"
+                name="email-footer"
+                placeholder="E-mail"
+              />
             </label>
             <button class="btn-footer" type="submit">
               Subscribe
@@ -453,31 +458,72 @@
           </svg>
         </button>
         <div class="model-container">
-        <h2 class="model-title">Leave your contacts and we will call you back</h2>
-        <form
-          class="model-form"
-          name="contact-form"
-          autocomplete="on"
-          novalidate
-        >
-          <label class="label-model lb-n" for="user-name">Name</label>
-          <input class="input-model" id="user-name" type="text" name="user-name" />
-          <label class="label-model" for="user-tel">Phone</label>
-          <input class="input-model" id="user-tel" type="tel" name="user-tel" />
-          <label class="label-model" for="user-email">Email</label>
-          <input class="input-model" id="user-email" type="email" name="user-email" />
-          <label class="label-model" for="user-comment">Comment</label>
-          <!-- <svg class="close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-email"></use>
-          </svg> -->
-          <textarea  class="input-model area"
-            name="user-comment"
-            id="user-comment"
-            placeholder="Text input"
-          ></textarea>
+          <h2 class="model-title">
+            Leave your contacts and we will call you back
+          </h2>
+          <form class="model-form" name="contact-form" autocomplete="on">
+            <label class="label-model lb-n" for="user-name">Name</label>
+            <div class="person-wrapper">
+              <input
+                class="input-model"
+                id="user-name"
+                type="text"
+                name="user-name"
+                required
+              />
+              <svg class="person-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            <label class="label-model" for="user-tel">Phone</label>
+            <div class="phone-wrapper">
+              <input
+                class="input-model"
+                id="user-tel"
+                type="tel"
+                name="user-tel"
+              />
+              <svg class="phone-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <label class="label-model" for="user-email">Email</label>
+            <div class="email-wrapper">
+              <input
+                class="input-model email"
+                id="user-email"
+                type="email"
+                name="user-email"
+              />
+              <svg class="email-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
 
-          <button class="button-model" type="submit">Send</button>
-        </form>
+            <label class="label-model" for="user-comment">Comment</label>
+            <textarea
+              class="input-model area"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+            <div class="form-checkbox">
+              <input
+                class="checkbox-input"
+                id="checkbox-input"
+                type="checkbox"
+                name="checkbox"
+              />
+              <span class="checkbox-icon"></span>
+              <label class="checkbox-label" for="checkbox-input"
+                >I accept the terms and conditions of the
+                <a class="privacy-policy" href="/">Privacy Policy</a></label
+              >
+            </div>
+            <div class="btn-box">
+              <button class="button-model" type="submit">Send</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -485,3 +531,6 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+<!-- <svg class="click-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-click"></use>
+              </svg>  -->
